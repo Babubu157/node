@@ -26,14 +26,11 @@ userPromise
   .then((users) => {
     // console.log(users);
     ////////////////////// Bodlogo 1 //////////////////
-
     // const userNames = users.map((user) => {
     //   return user.name;
     // });
     // console.log(userNames);
-
     ///////////////////// Bodlogo 2 //////////////////
-
     // const city = users.filter((user) => {
     //   //console.log(user);
     //   if (user.address.city.includes("view")) {
@@ -42,24 +39,73 @@ userPromise
     //   }
     // });
     // console.log(city);
-
     ///////////////////// Bodlogo 3 //////////////////
-
-    const userNameEmail = users.map((user) => {
-      // return {
-      //   name: student.name,
-      //   eligibleSchool: findSchool.map((schoolName) => {
-      //     return schoolName.name;
-      //   }),
-      // };
-      return {
-        name: user.name,
-        email: user.email,
-      };
-    });
-    console.log(userNameEmail);
-
+    // const userNameEmail = users.map((user) => {
+    //   // return {
+    //   //   name: student.name,
+    //   //   eligibleSchool: findSchool.map((schoolName) => {
+    //   //     return schoolName.name;
+    //   //   }),
+    //   // };
+    //   return {
+    //     name: user.name,
+    //     email: user.email,
+    //   };
+    // });
+    // console.log(userNameEmail);
     ///////////////////// Bodlogo 4 //////////////////
+    // const geoInfo = users.sort((a, b) => b.address.geo.lat - a.address.geo.lat);
+    // console.log(geoInfo.map((user) => user.address.geo));
+    ///////////////////// Bodlogo 5 //////////////////
+    //     let animals = ['elephant', 'cat', 'bear', 'dog', 'cow']
+    // let newWord = animals.reduce((accumulator, value) => {
+    //     return accumulator + value[0]
+    // }, '')
+    // console.log(newWord) // ecbdc
+    // let res = 1;
+    // const city = users.map((resident) => resident.address.city);
+    // // console.log(city);
+    // const cityResident = city.reduce((acc, value) => {
+    //   // if (acc === value) {
+    //   //   res++;
+    //   //   return {
+    //   //     city,
+    //   //     res,
+    //   //   };
+    //   // } else {
+    //   //   return {
+    //   //     acc: res,
+    //   //   };
+    //   // }
+    // });
+    // console.log(cityResident);
+    ///////////////////// Bodlogo 6 //////////////////
+    // const companyUpperName = users.map((user) => {
+    //   return user.company.name.toUpperCase();
+    // });
+    // console.log(companyUpperName);
+    ///////////////////// Bodlogo 7 //////////////////
+    // const webs = users.map((web) => {
+    //   return web.website;
+    // });
+    // const orgExtension = webs.filter((arg) => {
+    //   if (arg.includes(".org")) {
+    //     return true;
+    //   }
+    // });
+    // console.log(orgExtension);
+    ///////////////////// Bodlogo 8 //////////////////
 
-    const geoInfo = users.sort;
+    const lat = users.map((userLat) => {
+      return userLat.address.geo.lat;
+    });
+    let length = lat.length;
+    const avgLat =
+      lat
+        .reduce((pValue, cValue) => {
+          parseFloat(pValue) + parseFloat(cValue);
+        })
+        .toFixed(4) / length;
+
+    console.log(avgLat);
   });
