@@ -100,12 +100,9 @@ userPromise
       return userLat.address.geo.lat;
     });
     let length = lat.length;
-    const avgLat =
-      lat
-        .reduce((pValue, cValue) => {
-          parseFloat(pValue) + parseFloat(cValue);
-        })
-        .toFixed(4) / length;
-
-    console.log(avgLat);
+    console.log(length);
+    const avgLat = lat.reduce((pValue, cValue) => {
+      return (pValue = pValue + parseFloat(cValue));
+    }, 0);
+    console.log(avgLat / users.length);
   });
