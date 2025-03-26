@@ -92,8 +92,42 @@ const firstArrayFirstNumer = account[0][0];
 //   }
 // });
 
-const allowed = "ab";
-const words = ["ad", "bd", "aaab", "baa", "badab"];
-words.forEach((el) => {
-  el.split;
-});
+////////////////// homework3 ///////////////////
+// let sumAllowed = 0;
+// let notAllowedUseg = 0;
+// const allowed = "ab";
+// const words = ["ad", "bd", "aaab", "baa", "badab", "baba", "baaba"];
+// words.forEach((el) => {
+//   const array = el.split("");
+//   array.forEach((useg) => {
+//     if (allowed.includes(useg)) {
+//       console.log("yes");
+//     } else {
+//       notAllowedUseg = 1;
+//     }
+//   });
+//   if (notAllowedUseg === 0) {
+//     sumAllowed++;
+//   }
+//   notAllowedUseg = 0;
+// });
+
+// console.log(sumAllowed);
+
+///////////////// homework 4 //////////////
+let lessNum = 0;
+const nums = [8, 1, 2, 2, 3, 8, 5];
+const result = [];
+let el = 0;
+for (let i = 0; i < nums.length; i++) {
+  for (let j = 0; j < nums.length; j++) {
+    if (i !== j) {
+      if (nums[i] > nums[j]) {
+        lessNum++;
+      }
+    }
+  }
+  result.push(lessNum);
+  lessNum = 0;
+}
+console.log(result);
