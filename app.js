@@ -95,14 +95,22 @@ userPromise
     // });
     // console.log(orgExtension);
     ///////////////////// Bodlogo 8 //////////////////
+    //   const lat = users.map((userLat) => {
+    //     return userLat.address.geo.lat;
+    //   });
+    //   let length = lat.length;
+    //   console.log(length);
+    //   const avgLat = lat.reduce((pValue, cValue) => {
+    //     return (pValue = pValue + parseFloat(cValue));
+    //   }, 0);
+    //   console.log(avgLat / users.length);
+    ///////////////////// Bodlogo 9 //////////////////
 
-    const lat = users.map((userLat) => {
-      return userLat.address.geo.lat;
-    });
-    let length = lat.length;
-    console.log(length);
-    const avgLat = lat.reduce((pValue, cValue) => {
-      return (pValue = pValue + parseFloat(cValue));
-    }, 0);
-    console.log(avgLat / users.length);
+    const result = users.filter((el) =>
+      el.company.catchPhrase.includes("interface")
+    );
+
+    const names = result.map((worker) => worker.name);
+
+    console.log(names);
   });
