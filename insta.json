@@ -1,0 +1,52 @@
+[
+    {
+      "username": "Erdenebaatar Gankhuu",
+      "nickname": "Baatarscc",
+      "suggested": true,
+      "followedByNickName": "123"
+      
+    },
+    {
+      "username": "Davaa Sumiya",
+      "nickname": "DavkaS",
+      "suggested": false,
+      "followedByNickName": "25LP0000"
+    },
+    {
+      "username": "Myagmar Angarag",
+      "nickname": "migA",
+      "suggested": true,
+      "followedByNickName": "123"
+    },
+    {
+      "username": "Lkhagva Bud",
+      "nickname": "LkhagvaBud",
+      "suggested": false,
+      "followedByNickName": "sara123"
+    },
+    {
+      "username": "Purev Barhas",
+      "nickname": "Puujee123",
+      "suggested": true,
+      "followedByNickName": "25LP0000"
+    },
+    {
+      "username": "Baasan Sugar",
+      "nickname": "FriSugar",
+      "suggested": false,
+      "followedByNickName": "25LP0000"
+    },
+    {
+      "username": "Byamba Sanchir",
+      "nickname": "Byambaa789",
+      "suggested": true,
+      "followedByNickName": "sara123"
+    },
+    {
+      "username": "Bolortsetseg Ganbat",
+      "nickname": "25LP0000",
+      "suggested": false,
+      "followedByNickName": "123"
+    }
+  ]
+  
